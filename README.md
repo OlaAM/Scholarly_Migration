@@ -1,6 +1,7 @@
 # Scholarly_Migration
 Replication Code and Data
-## "It's who you know — unless you're famous: Professional networks and prestige in scholarly mobility"
+The Role of Professional Networks and Institutional Prestige in3
+Shaping the First Career Moves of Scholars4
 
 MPIDR Working Paper WP 2025-028 | September 2025  
 DOI: https://doi.org/10.4054/MPIDR-WP-2025-028
