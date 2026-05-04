@@ -1,7 +1,6 @@
 # Scholarly_Migration
-Replication Code and Data
-The Role of Professional Networks and Institutional Prestige in3
-Shaping the First Career Moves of Scholars4
+Replication Code and Data for the paper 
+## The Role of Professional Networks and Institutional Prestige in Shaping the First Career Moves of Scholars 
 
 MPIDR Working Paper WP 2025-028 | September 2025  
 DOI: https://doi.org/10.4054/MPIDR-WP-2025-028
