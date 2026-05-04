@@ -54,13 +54,10 @@ install.packages(c("tidyverse", "cowplot", "ggpubr", "readxl", "patchwork", "arr
 
 1. Clone or download this repository to your local machine
 2. Open R or RStudio
-3. Set your working directory to the **root** of the repository:
-```r
-setwd("/path/to/scholarly-mobility-replication")
-```
+3. Set/edit the working directory:
 4. To reproduce Figures 2, 3, and S1, run:
 ```r
-source("Code/plot_figures.R")
+source("Code_figure2_3_S1.R")
 ```
 
 6. All figures will be saved to the `Outputs/` folder
