@@ -10,7 +10,7 @@ DOI: https://doi.org/10.4054/MPIDR-WP-2025-028
 ## Overview
 
 This repository contains the replication code and input data for the main manuscript figures ( 2 and 3)
-in addition to the S1 figure, figures S2,S3 are not included as they the individual level data from Scopus which cannot be shared. 
+in addition to the S1 figure, figures S2,S3 are not included as they require the individual-level data from Scopus, which cannot be shared. 
 ---
 
 ## Repository Structure
@@ -60,7 +60,7 @@ install.packages(c("tidyverse", "cowplot", "ggpubr", "readxl", "patchwork", "arr
 source("Code_figure2_3_S1.R")
 ```
 
-6. All figures will be saved to the `Outputs/` folder
+6. Create a folder called "Outputs" in the working directory that will include the figures. 
 
 
 ---
