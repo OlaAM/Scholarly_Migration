@@ -22,8 +22,8 @@ library(patchwork)
 options(scipen = 999)
 
 # Relative paths — works for anyone who sets working directory to repo root
-base_path   <- "/Users/olaali/Desktop/Replication_Code /Inputs"
-output_path <- "/Users/olaali/Desktop/Replication_Code /Outputs"
+base_path   <- "./Inputs"
+output_path <- "./Outputs"
 
 dir.create(output_path, showWarnings = FALSE, recursive = TRUE)
 
@@ -123,19 +123,39 @@ MLR_move_long <- left_join(MLR_move_prob_long, MLR_move_se_long, by = c("categor
 
 MLR_move_long$move_type <- factor(MLR_move_long$move_type, levels = levels(fct_rev(MLR_move_long$move_type)))
 
-MLR_move_plot <- ggplot(MLR_move_long, aes(x = move_type, y = prob, ymin = prob - se, ymax = prob + se, color = category, group = category)) +
-  geom_errorbar(width = 0.05, size = 0.05) +
-  geom_line(linewidth = 0.4, linetype = "dashed") +
-  geom_point(size = 2) +
-  scale_y_continuous(labels = scales::number_format(accuracy = 0.1)) +
-  labs(x = "Type of mobility event", y = "Predicted probability\nof moving", color = NULL) +
+unique(MLR_move_long$category)
+unique(MLR_move_long$move_type)
+MLR_move_long <- MLR_move_long %>%
+  mutate(x_adj = case_when(
+    move_type == "international move" & category == "prob.both" ~ 2.05,
+    move_type == "international move" & category == "prob.institutional_direction" ~ 1.95,
+    move_type == "international move" ~ 2,
+    move_type == "national move" ~ 1
+  ))
+
+MLR_move_plot <- ggplot(MLR_move_long, aes(x = x_adj, y = prob, ymin = prob - se, ymax = prob + se, color = category, group = category)) +
+  geom_point(size = 3) + 
+  scale_x_continuous(
+    breaks = c(1, 2),
+    labels = c("national move", "international move"),
+    limits = c(0.5, 2.5)
+  ) +
+  labs(
+    x = "Type of mobility event",  # Set x-axis title
+    y = "Predicted probability\nof moving",  # Set y-axis title
+    color = NULL  # Remove legend title
+  ) +
   scale_color_manual(
     values = c("steelblue", "orange", "Yellow green", "Firebrick"),
-    labels = c("Neither connection", "Both connections", "Individual connections", "Institutional connections")
+    labels = c("Neither connection", "Both connections", "Individual connections", "Institutional connections")  # Rename legend labels
   ) +
   theme_pubclean() +
-  theme(legend.key.height = unit(0.045, "npc"), legend.title = element_blank(),
-        plot.title = element_blank(), legend.position = "bottom") +
+  theme(
+    legend.key.height = unit(0.045, "npc"), 
+    legend.title = element_blank(),  # Remove legend title
+    plot.title = element_blank(),  # Remove plot title
+    legend.position = "bottom",  # Move legend to the bottom
+  ) +
   ylim(0, 0.6) +
   guides(color = guide_legend(nrow = 4))
 
@@ -146,7 +166,7 @@ MLR_move_plot
 # FIGURE 2C: DCM — percentiles plot
 # =============================================================================
 
-dcm_data_percentiles <- read_csv(f("prediction_df_percentiles_plot_df_capped.csv")) %>%
+dcm_data_percentiles <- read_csv(f("prediction_df_percentiles_plot_df.csv")) %>%
   filter(type != "neither")
 
 dcmlabel1 <- expression(atop("" * S[Fj]^{ind[2]} * " varying, ", S[ij]^{inst[2]} * "at mean"))

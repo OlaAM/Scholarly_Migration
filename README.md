@@ -1,6 +1,6 @@
 # Scholarly_Migration
-Replication Code and Data for the paper 
-## The Role of Professional Networks and Institutional Prestige in Shaping the First Career Moves of Scholars 
+Replication Code and Data for the paper
+## The Role of Professional Networks and Institutional Prestige in Shaping the First Career Moves of Scholars
 
 MPIDR Working Paper WP 2025-028 | September 2025  
 DOI: https://doi.org/10.4054/MPIDR-WP-2025-028
@@ -9,8 +9,7 @@ DOI: https://doi.org/10.4054/MPIDR-WP-2025-028
 
 ## Overview
 
-This repository contains the replication code and input data for the main manuscript figures ( 2 and 3)
-in addition to the S1 figure, figures S2,S3 are not included as they require the individual-level data from Scopus, which cannot be shared. 
+This repository contains the replication code and input data for Figures 2 and 3 in the main manuscript, as well as Figure S1. Figures S2 and S3 are not included because they require individual-level Scopus data, which cannot be shared.
 ---
 
 ## Repository Structure
@@ -21,7 +20,7 @@ scholarly-mobility-replication/
 │   ├── importance.csv               # Decision tree feature importances (Figure S1)
 │   ├── multinom_direction_FINAL_results.xlsx  # MLR predicted probabilities (Figures 2A, 2B, 3A.1, 3A.2)
 │   ├── effect_statistics.csv        # MLR prestige effect statistics (Figure 3A.2)
-│   ├── prediction_df_percentiles_plot_df_capped.csv  # DCM percentile predictions (Figure 2C)
+│   ├── prediction_df_percentiles_plot_df.csv  # DCM percentile predictions (Figure 2C)
 │   ├── prediction_df_stength_prestige_interaction.csv # DCM prestige interactions (Figures 3B.1, 3B.2, 3C.1, 3C.2)
 
 
@@ -60,7 +59,7 @@ install.packages(c("tidyverse", "cowplot", "ggpubr", "readxl", "patchwork", "arr
 source("Code_figure2_3_S1.R")
 ```
 
-6. Create a folder called "Outputs" in the working directory that will include the figures. 
+6. Create a folder called "Outputs" in the working directory that will include the figures.
 
 
 ---
@@ -68,4 +67,3 @@ source("Code_figure2_3_S1.R")
 ## Data Availability Note
 
 The input files in this repository contain **aggregated model outputs**. They do not contain individual-level Scopus records. The raw Scopus data used in the analysis is not publicly available due to license restrictions. Researchers interested in accessing the raw data should contact Elsevier/Scopus directly or reach out to the corresponding author at akbaritabar@demogr.mpg.de.
-
