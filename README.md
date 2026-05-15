@@ -1,15 +1,64 @@
-# Scholarly_Migration
-Replication Code and Data for the paper
-## The Role of Professional Networks and Institutional Prestige in Shaping the First Career Moves of Scholars
+# Replication Code and Data for paper "The role of professional networks and institutional prestige in shaping the first career moves of scholars"
 
-MPIDR Working Paper WP 2025-028 | September 2025  
-DOI: https://doi.org/10.4054/MPIDR-WP-2025-028
+**Authos of scripts and maintainers of the repository**: Alexandra Rottenkolber, Ola Ali, Gergely Mónus, Jiaxuan Li
+
+**Date of the last update**: 2026-05-06
+
+**Open Science Framework permanent repository**: [https://doi.org/10.17605/OSF.IO/EVDHU](https://doi.org/10.17605/OSF.IO/EVDHU)
+
+## Publication
+
+**Title**: The role of professional networks and institutional prestige in shaping the first career moves of scholars
+
+**Authors**: Alexandra Rottenkolber, Ola Ali, Gergely Mónus, Jiaxuan Li, Jisu Kim, Daniela Perrotta, Aliakbar Akbaritabar
+
+**DOI**: [https://doi.org/10.1093/pnasnexus/pgag168](https://doi.org/10.1093/pnasnexus/pgag168)
+
+**Publication venue and date**: PNAS Nexus, 2026
+
+**Abstract**:
+Mobility of researchers is closely linked to knowledge diffusion, scientific innovation, and international collaboration. While prior research highlights the role of networks in shaping migration flows, the extent to which personal and institutional ties influence the direction of scientific mobility remains unclear. This study leverages large-scale digital trace data from Scopus, capturing the complete mobility trajectories, co-authorship networks, and collaboration histories of 172,000 authors over two decades (1996–2020). Using multinomial and conditional multinomial logit models, we examine scholars' first career move by (i) classifying moves into four network-defined mobility-type categories and (ii) modelling destination choice as a function of co-authorship connection strength, institutional linkages, and institutional prestige. Our findings show that not only first-, but also second-order co-authorship ties — connections to a scholar's collaborators' collaborators — are a strong correlate of the direction of a move. Scholars with extensive individual professional networks, particularly those migrating abroad, are more likely to move along individual ties. In contrast, scholars from prestigious institutions, and those moving within national borders, are more likely to follow institutional routes. The destination-choice models confirm that both individual and institutional ties are associated with a higher probability of moving to specific research institutions, with a larger estimated association for individual than for institutional ones. Overall, this research provides empirical evidence on how individual and institutional connections shape scholars' first career mobility. The findings have important implications for migration theory and policy, emphasising the need to support both individual and institutional collaboration networks to foster global scientific and knowledge exchange.
+
+## How to cite
+
+If you use the data in this repository, please cite our publication using the following APA style or BibTex information.
+
+### APA style
+
+```
+Alexandra Rottenkolber, Ola Ali, Gergely Mónus, Jiaxuan Li, Jisu Kim, Daniela Perrotta, Aliakbar Akbaritabar, The role of professional networks and institutional prestige in shaping the first career moves of scholars, PNAS Nexus, 2026;, pgag168, https://doi.org/10.1093/pnasnexus/pgag168
+
+```
+
+### BibTex handle
+
+```BibTeX
+@article{10.1093/pnasnexus/pgag168,
+    author = {Rottenkolber, Alexandra and Ali, Ola and Mónus, Gergely and Li, Jiaxuan and Kim, Jisu and Perrotta, Daniela and Akbaritabar, Aliakbar},
+    title = {The role of professional networks and institutional prestige in shaping the first career moves of scholars},
+    journal = {PNAS Nexus},
+    pages = {pgag168},
+    year = {2026},
+    month = {05},
+    abstract = {Mobility of researchers is closely linked to knowledge diffusion, scientific innovation, and international collaboration. While prior research highlights the role of networks in shaping migration flows, the extent to which personal and institutional ties influence the direction of scientific mobility remains unclear. This study leverages large-scale digital trace data from Scopus, capturing the complete mobility trajectories, co-authorship networks, and collaboration histories of 172,000 authors over two decades (1996–2020). Using multinomial and conditional multinomial logit models, we examine scholars' first career move by (i) classifying moves into four network-defined mobility-type categories and (ii) modelling destination choice as a function of co-authorship connection strength, institutional linkages, and institutional prestige. Our findings show that not only first-, but also second-order co-authorship ties — connections to a scholar's collaborators' collaborators — are a strong correlate of the direction of a move. Scholars with extensive individual professional networks, particularly those migrating abroad, are more likely to move along individual ties. In contrast, scholars from prestigious institutions, and those moving within national borders, are more likely to follow institutional routes. The destination-choice models confirm that both individual and institutional ties are associated with a higher probability of moving to specific research institutions, with a larger estimated association for individual than for institutional ones. Overall, this research provides empirical evidence on how individual and institutional connections shape scholars' first career mobility. The findings have important implications for migration theory and policy, emphasising the need to support both individual and institutional collaboration networks to foster global scientific and knowledge exchange.},
+    issn = {2752-6542},
+    doi = {10.1093/pnasnexus/pgag168},
+    url = {https://doi.org/10.1093/pnasnexus/pgag168},
+    eprint = {https://academic.oup.com/pnasnexus/advance-article-pdf/doi/10.1093/pnasnexus/pgag168/68290939/pgag168.pdf},
+}
+
+```
+
+## Open Access Working Paper
+
+Rottenkolber, A., Ali, O., Mónus, G., Li, J., Kim, J., Perrotta, D., Akbaritabar, A. MPIDR Working Paper WP-2025-028, 31 pages. Rostock, Max Planck Institute for Demographic Research (September 2025) [https://doi.org/10.4054/MPIDR-WP-2025-028](https://doi.org/10.4054/MPIDR-WP-2025-028)
 
 ---
 
-## Overview
+# Overview of repositry and files
 
 This repository contains the replication code and input data for Figures 2 and 3 in the main manuscript, as well as Figure S1. Figures S2 and S3 are not included because they require individual-level Scopus data, which cannot be shared.
+
 ---
 
 ## Repository Structure

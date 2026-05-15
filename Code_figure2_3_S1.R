@@ -1,4 +1,12 @@
 # =============================================================================
+# **Authos of scripts and maintainers of the repository**: Alexandra Rottenkolber, Ola Ali, Gergely Mónus, Jiaxuan Li
+
+# **Date of the last update**: 2026-05-06
+
+# **Open Science Framework permanent repository**: [https://doi.org/10.17605/OSF.IO/EVDHU](https://doi.org/10.17605/OSF.IO/EVDHU)
+
+# **GitHub repository**: [https://github.com/OlaAM/Scholarly_Migration](https://github.com/OlaAM/Scholarly_Migration)
+
 # HOW TO RUN THIS SCRIPT
 # -----------------------------------------------------------------------------
 # 1. Install required packages by running:
